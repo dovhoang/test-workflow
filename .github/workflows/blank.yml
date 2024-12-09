@@ -27,7 +27,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Get App Name and Version 2
         run : |
-          echo "APP_NAME=$(echo ${{ github.ref_name }} | cut -d'_' -f2)" >> $GITHUB_ENV
+          echo "APP_NAME=$(echo ${{ github.ref_name }} | cut -d'_' -f2 | tr '[:lower:]' '[:upper:]')" >> $GITHUB_ENV
           echo "APP_VERSION=$(echo ${{ github.ref_name }} | cut -d'_' -f3)" >> $GITHUB_ENV
           
       - name: Show App Name and Version 2
