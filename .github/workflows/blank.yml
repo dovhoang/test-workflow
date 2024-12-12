@@ -43,6 +43,6 @@ jobs:
           filename: ${{ github.workspace }}/test.apk
           folderId: 1hx592gyMLFvnXMXVhLNAZVeDUv7YrAmX
           name: "test" # optional string
-          overwrite: "true" # optional boolean
+          overwrite: "true" 
 
 
